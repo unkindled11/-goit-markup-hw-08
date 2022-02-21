@@ -1,0 +1,52 @@
+.icon-container {
+  width: 206px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-box__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-property: border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--action-color);
+    border-radius: 50%;
+  }
+}
+
+.icon-box__icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-position: center;
+  fill: #afb1b8;
+  fill: currentColor;
+}
+
+.icon-box__mini:not(:last-child) {
+  margin-right: 10px;
+}

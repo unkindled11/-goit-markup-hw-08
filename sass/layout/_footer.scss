@@ -1,0 +1,32 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--hero-color);
+}
+
+.adress-list__distance {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+.adress-list__link {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 9px;
+  color: var(--primary-bg-color);
+  @include font(null, 14px, 1.71, 0.03em);
+}
+
+.adress-list__info {
+  color: rgba(255, 255, 255, 0.6);
+  @include font(null, 14px, 1.71, 0.03em);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--action-color);
+  }
+}

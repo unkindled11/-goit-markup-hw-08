@@ -1,0 +1,10 @@
+.web {
+  color: var(--action-color);
+}
+
+.logo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  @include font(null, 26px, 1.2, 0.03em);
+}
