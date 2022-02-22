@@ -18,7 +18,7 @@
 }
 
 .footer-links__title {
-  @include font(bold, 16px, 1.14, 0.03em);
+  @include font(bold, 14px, 1.14, 0.03em);
   text-transform: uppercase;
 
   color: var(--primary-bg-color);
