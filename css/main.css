@@ -27,7 +27,6 @@ ol {
 
 .header {
   border-bottom: 1px solid #e5e5e5;
-  padding-top: 15px;
   position: relative;
   width: 100%;
 }
@@ -68,28 +67,6 @@ ol {
   padding-bottom: 24px;
 }
 
-.projects-container {
-  width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-  .projects-container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .projects-container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .projects-container {
-    width: 1200px;
-  }
-}
-
 .section {
   padding: 60px 0px 60px 0px;
 }
@@ -108,7 +85,7 @@ ol {
 @media screen and (min-width: 1200px) {
   .adv-section {
     padding-top: 94px;
-    padding-bottom: 0;
+    padding-bottom: 94px;
   }
 }
 
@@ -123,6 +100,24 @@ ol {
 @media screen and (min-width: 1200px) {
   .follow-section {
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section.business-section {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section.business-section {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section.business-section {
+    padding-bottom: 94px;
   }
 }
 
@@ -185,12 +180,6 @@ ol {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    margin-right: 305px;
-  }
-}
-
 .site-nav .site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
@@ -249,16 +238,12 @@ ol {
 @media screen and (min-width: 768px) {
   .container-navigation {
     width: 768px;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container-navigation {
     width: 1200px;
-    padding-left: 212px;
-    padding-right: 218px;
   }
 }
 
@@ -548,17 +533,20 @@ ol {
   }
 }
 
-.advantages__item:nth-child(-n + 2) {
-  margin-bottom: 0px;
-}
-
 .advantages__title {
+  text-align: center;
   margin-top: 30px;
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    text-align: start;
+  }
 }
 
 .advantages__description {
@@ -699,6 +687,12 @@ ol {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .team__box:first-child {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team__box {
     width: calc(100% / 2 - 30px);
@@ -714,11 +708,17 @@ ol {
 }
 
 .team__title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 0.03em;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 480px) {
+  .team__title {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -727,6 +727,7 @@ ol {
     font-size: 36px;
     letter-spacing: 0.03em;
     line-height: 1.16;
+    margin-bottom: 20px;
   }
 }
 
@@ -871,14 +872,16 @@ ol {
 
 .customers__title {
   margin-bottom: 30px;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0.03em;
-  line-height: 1.16;
-  font-size: 36px;
+  line-height: 1.17;
 }
 
 @media screen and (min-width: 1200px) {
   .customers__title {
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    line-height: 1.16;
     margin-bottom: 50px;
   }
 }
@@ -905,7 +908,6 @@ ol {
 
 .footer-box {
   text-align: center;
-  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
@@ -975,6 +977,12 @@ ol {
     padding-right: 0;
     padding-left: 0;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-list {
+    text-align: start;
   }
 }
 
@@ -1473,8 +1481,7 @@ ol {
   left: 0;
   height: 100%;
   background-color: #ffffff;
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
   padding-top: 48px;
   transition: left 300ms, opacity 300ms, visibility 300ms;
 }

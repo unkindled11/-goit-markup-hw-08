@@ -9,7 +9,6 @@
     display: flex;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: 305px;
   }
 }
 
@@ -68,13 +67,11 @@
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    margin-left: 0px;
-    margin-right: 0px;
+    // margin-left: 0px;
+    // margin-right: 0px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
-    padding-left: 212px;
-    padding-right: 218px;
   }
 }
