@@ -39,4 +39,8 @@
   &:focus {
     border-color: var(--action-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
