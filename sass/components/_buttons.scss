@@ -42,7 +42,6 @@
 // Follow buttons
 
 .follow-form__button {
-  justify-content: center;
   outline: none;
 
   width: 200px;
@@ -50,7 +49,7 @@
   margin-left: 12px;
 
   @include font(bold, 16px, 1.87, 0.06em);
-  display: flex;
+
   align-items: center;
   text-align: center;
   border: none;
@@ -60,6 +59,10 @@
   border-radius: 4px;
 
   cursor: pointer;
+  // @media screen and (min-width: 1200px) {
+  // display: flex;
+  // justify-content: center;
+  // }
 }
 
 .buttons-list {

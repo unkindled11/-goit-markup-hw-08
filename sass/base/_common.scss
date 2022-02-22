@@ -10,11 +10,6 @@
   list-style: none;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
 .team__title,
 .business__title {
   font-weight: bold;
@@ -22,4 +17,9 @@
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }

@@ -1,7 +1,28 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--hero-color);
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+}
+
+.footer-box {
+  text-align: center;
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .adress-list__distance {
@@ -28,5 +49,22 @@
   &:hover,
   &:focus {
     color: var(--action-color);
+  }
+}
+
+.tab-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    align-items: baseline;
+    justify-content: space-between;
+    padding-right: 89px;
+    padding-left: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 0;
+    padding-left: 0;
+
+    margin-left: auto;
   }
 }

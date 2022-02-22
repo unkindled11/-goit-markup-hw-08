@@ -20,9 +20,13 @@
 }
 
 .follow-section {
-  text-align: start;
-  margin-left: 93px;
-  margin-bottom: 40px;
-  width: 570px;
-  height: 86px;
+  margin-top: 60px;
+  //   text-align: start;
+  //   margin-left: 93px;
+  //   margin-bottom: 40px;
+  //   width: 570px;
+  //   height: 86px;
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
 }

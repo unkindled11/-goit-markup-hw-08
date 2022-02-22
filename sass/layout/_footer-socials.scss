@@ -1,15 +1,14 @@
 .footer-links {
-  text-align: start;
   display: inline-block;
-  margin-left: 70px;
-  margin-bottom: 40px;
-  width: 206px;
-  height: 80px;
-}
 
-.footer-box {
-  display: flex;
-  align-items: baseline;
+  margin-top: 60px;
+  // width: 206px;
+  // height: 80px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 
 .icon-flex-box {
@@ -20,7 +19,6 @@
 
 .footer-links__title {
   @include font(bold, 16px, 1.14, 0.03em);
-
   text-transform: uppercase;
 
   color: var(--primary-bg-color);

@@ -4,18 +4,28 @@
   text-transform: uppercase;
 
   color: var(--primary-bg-color);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .follow-form {
-  display: flex;
-  margin-top: 20px;
+  // margin-top: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .follow-form__input {
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #fff;
   outline: none;
   padding-left: 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);

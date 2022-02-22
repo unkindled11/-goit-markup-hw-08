@@ -1,6 +1,24 @@
 .contacts {
-  display: flex;
   margin-left: auto;
+  margin-right: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.contacts__item {
+  // @media screen and (min-width: 1200px) {
+  //   width: 165px;
+  // }
+  width: 165px;
 }
 
 .contacts__info {
@@ -18,13 +36,15 @@
   }
 }
 
-.contacts .contacts__item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+// .contacts .contacts__item {
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+// }
 
 .contacts .contacts__item + .contacts__item {
-  margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 
 .contacts__info--mail-icon {

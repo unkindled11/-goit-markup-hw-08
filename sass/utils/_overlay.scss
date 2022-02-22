@@ -1,16 +1,65 @@
 .overlay {
   width: 100%;
   max-width: 1600px;
-  height: 100%;
+  height: 400%;
   margin-left: auto;
   margin-right: auto;
-
-  @media screen and (min-width: 480px) {
+  background-image: radial-gradient(
+      circle at center,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../images/mobile/hero-480@1x.jpg");
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: radial-gradient(
+        circle at center,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/mobile/hero-480@2x.jpg");
   }
 
   @media screen and (min-width: 768px) {
+    background-image: radial-gradient(
+        circle at center,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/tablet/hero-768@1x.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: radial-gradient(
+          circle at center,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/tablet/hero-768@2x.jpg");
+    }
   }
 
   @media screen and (min-width: 1200px) {
+    background-image: radial-gradient(
+        circle at center,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bg.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: radial-gradient(
+          circle at center,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/desktop/hero-1200@2x.jpg");
+    }
   }
 }
